@@ -2,7 +2,7 @@ node('built-in')
 {
     stage('Continuous Download') 
 	{
-    git 'https://github.com/sunildevops77/maven.git'
+    git 'https://github.com/ArunkumarBalisetty/Demo.git'
 	}
     stage('Continuous Build') 
 	{
@@ -10,7 +10,7 @@ node('built-in')
 	}
     stage('Continuous Deployment') 
 	{
-    sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.26.217:/var/lib/tomcat8/webapps/qaenv.war'
+    sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.34.145:/var/lib/tomcat8/webapps/qaenv1.war'
 	}
     stage('Continuous Testing') 
 	{
