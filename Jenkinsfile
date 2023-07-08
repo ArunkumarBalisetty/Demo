@@ -14,7 +14,7 @@ node('built-in')
 	}
     stage('Continuous Testing') 
 	{
-              sh 'echo "Testing Passed"'
+              sh 'echo "Testing Passed please check the result"'
 	}
     stage('Continuous Delivery') 
 	{
