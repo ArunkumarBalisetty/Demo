@@ -13,7 +13,7 @@ pipeline
             sh 'mvn package'
                    }
             }
-       stage('build') {
+       stage('info') {
                steps {
             sh 'echo "This is my new stage"'
                    }
